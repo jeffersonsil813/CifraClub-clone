@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react";
 
 export function MusicStyles() {
   return (
-    <div className="flex gap-2 mt-4">
+    <div className="flex gap-2 mt-4 overflow-x-auto">
       <a
         href="#"
         className="bg-zinc-800 text-zinc-50 border-solid border border-zinc-800 rounded-lg py-1 px-3 text-[13px] font-semibold flex items-center"
