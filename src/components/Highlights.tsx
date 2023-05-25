@@ -9,8 +9,18 @@ import { RevealList, RevealWrapper } from "next-reveal";
 export function Highlights() {
   return (
     <div className="flex flex-col gap-4">
-      <RevealWrapper origin="top" delay={200} duration={1200} distance="35px">
-        <Image className="rounded-lg" src={MarisaMonte} alt="Marisa Monte" />
+      <RevealWrapper
+        origin="top"
+        delay={200}
+        duration={1200}
+        distance="35px"
+        className="overflow-hidden"
+      >
+        <Image
+          className="rounded-lg transition-transform hover:scale-[1.03]"
+          src={MarisaMonte}
+          alt="Marisa Monte"
+        />
       </RevealWrapper>
       <RevealList
         interval={400}
@@ -20,26 +30,34 @@ export function Highlights() {
         distance="35px"
         className="flex flex-col lg:flex-row gap-4"
       >
-        <Image
-          className="rounded-lg w-full"
-          src={BestBluesRock}
-          alt="Best of Blues and Rock"
-        />
-        <Image
-          className="rounded-lg w-full"
-          src={FreddieMercury}
-          alt="Freddie Mercury"
-        />
-        <Image
-          className="rounded-lg w-full"
-          src={AsPatroas}
-          alt="As Patroas Show Completo"
-        />
-        <Image
-          className="rounded-lg w-full"
-          src={FooFighters}
-          alt="Foo Fighters - Best of You"
-        />
+        <div className="overflow-hidden lg:w-full">
+          <Image
+            className="rounded-lg w-full transition-transform hover:scale-[1.03]"
+            src={BestBluesRock}
+            alt="Best of Blues and Rock"
+          />
+        </div>
+        <div className="overflow-hidden lg:w-full">
+          <Image
+            className="rounded-lg w-full transition-transform hover:scale-[1.03]"
+            src={FreddieMercury}
+            alt="Freddie Mercury"
+          />
+        </div>
+        <div className="overflow-hidden lg:w-full">
+          <Image
+            className="rounded-lg w-full transition-transform hover:scale-[1.03]"
+            src={AsPatroas}
+            alt="As Patroas Show Completo"
+          />
+        </div>
+        <div className="overflow-hidden lg:w-full">
+          <Image
+            className="rounded-lg w-full transition-transform hover:scale-[1.03]"
+            src={FooFighters}
+            alt="Foo Fighters - Best of You"
+          />
+        </div>
       </RevealList>
     </div>
   );
