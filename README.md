@@ -23,6 +23,7 @@ Para o desenvolvimento desta aplicação utilizei as seguintes tecnologias:
 - [Next-Reveal](https://github.com/ritmillio/next-reveal)
 
 ---
+Link para acesso ao site: [Cifra Club Clone](https://cifraclub-clone.vercel.app/)
 
 ## 📃 Licença
 
